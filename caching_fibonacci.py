@@ -2,7 +2,7 @@ import typing
 #from typing import Callable
 
 
-def caching_fibonacci()->Callable.Callable[[int], int]:
+def caching_fibonacci()->typing.Callable[[int], int]:
     #Створити порожній словник cache
     cache: typing.Dict[int, int]={0:0,1:1} #Якщо n == 1, повернути 1
     def fibonacci(n:int)->int:
